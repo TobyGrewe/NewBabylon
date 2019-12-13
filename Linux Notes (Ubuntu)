@@ -2,26 +2,38 @@
 
 
 
-### "lolita" is the username for these learning session.
-
-
+note/ "lolita" is the username 
 
 sudo apt-get install neofetch
 
+############## KEYBOARD SHORTCUTS ################
+
+ctrl + alt + “t” = OPEN TERMINAL 
+
+While using file explorer use CTRL + L to show path file of current directory
+
+ctrl + x (while in terminal)
+>followed by backspace to delete line of text in terminal
+
+ctrl + arrow key
+>move through lines of text faster (left / right)
 
 
-########### TERMINAL COMMANDS ##############
+
+                                          ########### TERMINAL COMMANDS ##############
 === echo ===
-> echos text
+> repeats text
 > ex: "echo hello world!"
 
-=== PWD ====
+
+                                                /Directory navigation/
+=== pwd ====
 >stands for print working directory
 >Shows the current directory
 >ex: "pwd" 
  >output: /home/John
 
-==== CD =======
+==== cd =======
 >tell terminal to find a specific path / directory
 >ex: "cd /home/lolita/Documents"
 
@@ -36,7 +48,119 @@ ERROR: bash: cd: /home/lolita/pictures: No such file or directory
 "cd /home/lolita/pictures" is the correct command.
 Linux is key sensitive in all aspects. Learning this early on will help you throughout your whole 
 
+*More info @ http://www.linfo.org/cd.html
 
+/ ls /
+>LS L = list directory 
+       > ls -s
+        > ls 
+        >ls -l     (detailed info of directory)
+        >ls --help (more information for the "ls" command
+                                            /networking/
+/ ping /
+
+>checks the connectivity status between a source and a destination computer/device over an IP network.
+>ex: ping localhost 
+ >output:
+64 bytes from localhost (::1): icmp_seq=1 ttl=64 time=0.013 ms
+64 bytes from localhost (::1): icmp_seq=2 ttl=64 time=0.015 ms
+64 bytes from localhost (::1): icmp_seq=3 ttl=64 time=0.017 ms
+> ctrl + c to stop ping command
+
+*More info @ https://vitux.com/linux-ping-command/
+
+                                          /txt file read + write/
+# cat / (concatenation)
+
+# cat > test.txt
+  # following the command "cat > test.txt" a txt file named test will be created. You also can start typing in the terminal
+   >  "these are not the droids you are looking for. 
+   It's a trap!
+   I have a bad feeling about this"
+   
+  *Press ctrl + D to finish writing.
+  >In order to view the txt file simply type "cat test.txt"
+  > use the -b modifer to show a numbered list 
+   ex:  "cat -b test.txt"
+  /output:      
+     1     these are not the droids you are looking for. 
+     2     It's a trap!
+     3     I have a bad feeling about this
+  /
+ *More info @ https://www.lifewire.com/uses-of-linux-cat-command-4011235
+ 
+ # nano / Terminal app for text editing
+  #in a desired path (in this case "/home/lolita/Documents"),
+  >use: "cd /home/lolita/Documents". (the desired path)
+  >using the command nano we will make a file called "mathhomework"
+  >use: nano mathhomework (desired filename)
+  now we will be in the nano GUI
+ > type into the editor this math question
+                                                                                       
+simpfly if x= 3 y = 10
+
+x - 4 + 4y = ?
+> "ctrl + o" to save file
+ save file and exit nano (Ctrl + x) 
+ 
+ *More info @ https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/
+
+ > to open up terminal again try using "ctrl + alt + t"
+ 
+>if we wanted to remove this newly created "mathhomework" txt file we would do the following,
+ > indicate the correct path (/home/lolita/Documents) 
+ > use: cd /home/lolita/Documents
+ 
+To remove this file we will use the "rm" command (ReMove)
+> use: "rm mathhomework" 
+**********************See "sudo rm"****************
+
+                                              /apt-get and package manger/
+  
+ 
+ > the command "apt-get" installs applications. The usage for installation is "apt-get install"
+ For example if we wanted to download "neofetch" (Neoftech is a information command line script),
+ we would do "apt-get install neofetch". HOWEVER we need special privlege to install this app. 
+ adding a "sudo" (superuser do) before the command will grant us that.
+ use: "sudo apt-get install neofetch" ( will be prompted to input password)
+ Now that we have neofetch install lets see if we can display our system information.
+ use the command "neofetch" ( you should have a display of your system's information)
+ 
+ If you are installing often enough in a session you may want to try the "sudo su" command
+ doing "sudo su" will give you a sort of "caps lock" elevated privleges. This way you don't have to type sudo everytime.
+ For example if we wanted to download "discord" we would type "sudo su" , followed by "apt-get install discord"
+ 
+ Probably the most popular package managers are apt-get, aptitude, synaptic, and Software Center. There are others (Linux Mint has its own, and there are some designed for KDE), but these are the ones you'll run into most often.
+apt-get is a simple command-line tool. It's handy if you know the exact package name of what you want to install and don't want to spend time clicking through a GUI to get it.
+aptitude is very similar to apt-get, and I've heard that it deals better with crazy dependency situations. Which one is really better is debatable.
+synaptic is a low-level GUI. This is a good choice if you are a fairly advanced user but are not comfortable with command-line utilities.
+Software Center is a very high-level, new-user-friendly GUI. Software is nicely categorized so that, if you're not exactly sure what app you want, you can find what you need quickly. The Software Center also stands out in that it is the only package manager in this list that allows you to purchase commercial applications.
+dpkg is a lesser-used, low-level package manager standard for most Debian-based systems. In reality, apt-get, aptitude, synaptic, and the Ubuntu Software Center are all just front-ends to either dpkg or apt, which is in itself a front-end to dpkg.
+In answer to your question, "which one is the recommended choice for normal day-to-day package management", I would say that Software Center is recommended for most uses. But as you gain more experience, you will find some of the features of lower-level package managers useful.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX unfinished XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Install a package
+sudo dpkg -i DEB_PACKAGE
+
+Remove a package
+sudo dpkg -r PACKAGE_NAME
+
+
+KNOW THE NAME?
+Sudo apt-get install <bluefish>
+
+Sudo apt-get remove <bluefish>
+
+Search REPOSITORY 
+apt-cache search <bluefish>*
+apt-cache search <gimp>*
+
+What do I have installed?
+apt-cache policy <gimp>
+
+how to install using terminal
+sudo dpkg i ./ (current directory) ./googlechrome-stable_current_amd64.deb
 
 
 
