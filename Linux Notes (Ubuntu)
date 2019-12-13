@@ -40,7 +40,7 @@ ctrl + arrow key
 >To move up in the directory, for example going from /home/lolita/Documents to /home/lolita. 
 > Use "cd ../" (/home/lolita/Documents -> /home/lolita.)
 
->to naviagte to a path ("/home/lolita/Pictures" in this example), 
+>to navigate to a path ("/home/lolita/Pictures" in this example), 
 “Pictures” must be written with a capital P if not it won’t go to the right folder.
 "cd /home/lolita/pictures" is invalid due to the lowercase p 
 ERROR: bash: cd: /home/lolita/pictures: No such file or directory
@@ -80,7 +80,7 @@ Linux is key sensitive in all aspects. Learning this early on will help you thro
    
   *Press ctrl + D to finish writing.
   >In order to view the txt file simply type "cat test.txt"
-  > use the -b modifer to show a numbered list 
+  > use the -b modifier to show a numbered list 
    ex:  "cat -b test.txt"
   /output:      
      1     these are not the droids you are looking for. 
@@ -97,7 +97,7 @@ Linux is key sensitive in all aspects. Learning this early on will help you thro
   now we will be in the nano GUI
  > type into the editor this math question
                                                                                        
-simpfly if x= 3 y = 10
+solve  if x= 3 y = 10
 
 x - 4 + 4y = ?
 > "ctrl + o" to save file
@@ -120,14 +120,14 @@ To remove this file we will use the "rm" command (ReMove)
  
  > the command "apt-get" installs applications. The usage for installation is "apt-get install"
  For example if we wanted to download "neofetch" (Neoftech is a information command line script),
- we would do "apt-get install neofetch". HOWEVER we need special privlege to install this app. 
+ we would do "apt-get install neofetch". HOWEVER we need special privilege to install this app. 
  adding a "sudo" (superuser do) before the command will grant us that.
  use: "sudo apt-get install neofetch" ( will be prompted to input password)
  Now that we have neofetch install lets see if we can display our system information.
  use the command "neofetch" ( you should have a display of your system's information)
  
  If you are installing often enough in a session you may want to try the "sudo su" command
- doing "sudo su" will give you a sort of "caps lock" elevated privleges. This way you don't have to type sudo everytime.
+ doing "sudo su" will give you a sort of "caps lock" elevated privileges. This way you don't have to type sudo every time.
  For example if we wanted to download "discord" we would type "sudo su" , followed by "apt-get install discord"
  
  Probably the most popular package managers are apt-get, aptitude, synaptic, and Software Center. There are others (Linux Mint has its own, and there are some designed for KDE), but these are the ones you'll run into most often.
@@ -161,7 +161,6 @@ apt-cache policy <gimp>
 
 how to install using terminal
 sudo dpkg i ./ (current directory) ./googlechrome-stable_current_amd64.deb
-
 
 
 
