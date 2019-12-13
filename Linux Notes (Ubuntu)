@@ -1,0 +1,48 @@
+                                                             LINUX NOTES 12DEC19
+
+
+
+### "lolita" is the username for these learning session.
+
+
+
+sudo apt-get install neofetch
+
+
+
+########### TERMINAL COMMANDS ##############
+=== echo ===
+> echos text
+> ex: "echo hello world!"
+
+=== PWD ====
+>stands for print working directory
+>Shows the current directory
+>ex: "pwd" 
+ >output: /home/John
+
+==== CD =======
+>tell terminal to find a specific path / directory
+>ex: "cd /home/lolita/Documents"
+
+>To move up in the directory, for example going from /home/lolita/Documents to /home/lolita. 
+> Use "cd ../" (/home/lolita/Documents -> /home/lolita.)
+
+>to naviagte to a path ("/home/lolita/Pictures" in this example), 
+“Pictures” must be written with a capital P if not it won’t go to the right folder.
+"cd /home/lolita/pictures" is invalid due to the lowercase p 
+ERROR: bash: cd: /home/lolita/pictures: No such file or directory
+
+"cd /home/lolita/pictures" is the correct command.
+Linux is key sensitive in all aspects. Learning this early on will help you throughout your whole 
+
+
+
+
+
+
+
+
+
+
+
