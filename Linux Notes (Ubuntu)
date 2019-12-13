@@ -113,7 +113,7 @@ x - 4 + 4y = ?
  
 To remove this file we will use the "rm" command (ReMove)
 > use: "rm mathhomework" 
-**********************See "sudo rm"****************
+*See "sudo rm
 
                                               /apt-get and package manger/
   
@@ -140,7 +140,7 @@ In answer to your question, "which one is the recommended choice for normal day-
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX unfinished XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Install a package
+Install a package (local) ( must type in file path)
 sudo dpkg -i DEB_PACKAGE
 
 Remove a package
