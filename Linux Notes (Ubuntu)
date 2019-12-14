@@ -130,13 +130,42 @@ To remove this file we will use the "rm" command (ReMove)
  doing "sudo su" will give you a sort of "caps lock" elevated privileges. This way you don't have to type sudo every time.
  For example if we wanted to download "discord" we would type "sudo su" , followed by "apt-get install discord"
  
- Probably the most popular package managers are apt-get, aptitude, synaptic, and Software Center. There are others (Linux Mint has its own, and there are some designed for KDE), but these are the ones you'll run into most often.
+" Probably the most popular package managers are apt-get, aptitude, synaptic, and Software Center. There are others (Linux Mint has its own, and there are some designed for KDE), but these are the ones you'll run into most often.
 apt-get is a simple command-line tool. It's handy if you know the exact package name of what you want to install and don't want to spend time clicking through a GUI to get it.
 aptitude is very similar to apt-get, and I've heard that it deals better with crazy dependency situations. Which one is really better is debatable.
 synaptic is a low-level GUI. This is a good choice if you are a fairly advanced user but are not comfortable with command-line utilities.
 Software Center is a very high-level, new-user-friendly GUI. Software is nicely categorized so that, if you're not exactly sure what app you want, you can find what you need quickly. The Software Center also stands out in that it is the only package manager in this list that allows you to purchase commercial applications.
-dpkg is a lesser-used, low-level package manager standard for most Debian-based systems. In reality, apt-get, aptitude, synaptic, and the Ubuntu Software Center are all just front-ends to either dpkg or apt, which is in itself a front-end to dpkg.
-In answer to your question, "which one is the recommended choice for normal day-to-day package management", I would say that Software Center is recommended for most uses. But as you gain more experience, you will find some of the features of lower-level package managers useful.
+dpkg is a lesser-used, low-level package manager standard for most Debian-based systems. In reality, apt-get, aptitude, synaptic, and the Ubuntu Software Center are all just front-ends to either dpkg or apt, which is in itself a front-end to dpkg. "
+
+cp (copy)
+cp file 
+
+mv (move)
+mv tester1.txt ../ (up one directory)
+
+>   touch file1.txt file2.txt file3.cpp file4.pp
+*( writes multiple files) (empty files)
+touch main.cpp
+ls
+(file1.txt  file2.txt  file3.cpp  file4.pp  file.txt  main.cpp)
+rm ./*.cpp (removes all files with cpp
+rm ./* (Deletes everything in the directory)
+cd ../ (jump to parent directory)
+rm test/*   (delte everything but "test")
+rm -rf test (del folder) (must use -rf modifier for root folder deletion "test")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX unfinished XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
